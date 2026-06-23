@@ -2162,8 +2162,8 @@
 <nav class="sticky-nav" id="sticky-nav">
   <span class="nav-project">UA&amp;P Cebu Expansion</span>
   <a href="#section-summary" class="">Summary</a>
-  <a href="#section-blockers" class="">Watch List</a>
-  <a href="#section-areas" class="active">Areas</a>
+  <a href="#section-blockers" class="active">Watch List</a>
+  <a href="#section-areas" class="">Areas</a>
   <a href="#section-contractors" class="">Contractors</a>
   <button class="edit-toggle-btn" id="editToggleBtn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg> Edit Mode</button>
   <button class="publish-btn" id="publishBtn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg> Publish</button>
@@ -2202,21 +2202,21 @@
       <div class="bar animated"></div>
     </div>
     <div class="stat-card progress">
-      <div class="num">19</div>
+      <div class="num">24</div>
       <div class="lbl">In Progress</div>
-      <div class="pct">22% active</div>
+      <div class="pct">28% active</div>
       <div class="bar animated"></div>
     </div>
     <div class="stat-card notstarted">
-      <div class="num">13</div>
+      <div class="num">8</div>
       <div class="lbl">Not Started</div>
-      <div class="pct">15% pending</div>
+      <div class="pct">9% pending</div>
       <div class="bar animated"></div>
     </div>
     <div class="stat-card high">
-      <div class="num">24</div>
+      <div class="num">20</div>
       <div class="lbl">High Priority</div>
-      <div class="pct">28% of items</div>
+      <div class="pct">24% of items</div>
       <div class="bar animated"></div>
     </div>
   </div>
@@ -2231,8 +2231,8 @@
   </div>
   <div class="stacked-bar">
     <div class="seg c" style="width: 62%;">62%</div>
-    <div class="seg p" style="width: 22%;">22%</div>
-    <div class="seg n" style="width: 15%;">15%</div>
+    <div class="seg p" style="width: 28%;">28%</div>
+    <div class="seg n" style="width: 9%;">9%</div>
   </div>
   <div class="bar-legend">
     <div class="legend-item">
@@ -2246,14 +2246,14 @@
       <div class="legend-dot p"></div>
       <div class="legend-item-left">
         <span class="legend-label">In Progress</span>
-        <span class="legend-value p" id="leg-progress">19</span>
+        <span class="legend-value p" id="leg-progress">24</span>
       </div>
     </div>
     <div class="legend-item">
       <div class="legend-dot n"></div>
       <div class="legend-item-left">
         <span class="legend-label">Not Started</span>
-        <span class="legend-value n" id="leg-notstarted">13</span>
+        <span class="legend-value n" id="leg-notstarted">8</span>
       </div>
     </div>
   </div>
@@ -2426,22 +2426,22 @@
         <div class="stat-bar-meta">
           <span class="stat-bar-name">In Progress</span>
           <div class="stat-bar-nums">
-            <span class="stat-bar-count p" id="db-progress">19</span>
-            <span class="stat-bar-pct" id="db-progress-pct">22%</span>
+            <span class="stat-bar-count p" id="db-progress">24</span>
+            <span class="stat-bar-pct" id="db-progress-pct">28%</span>
           </div>
         </div>
-        <div class="stat-bar-track"><div class="stat-bar-fill p" id="fill-progress" data-pct="47" style="width: 22%;"></div></div>
+        <div class="stat-bar-track"><div class="stat-bar-fill p" id="fill-progress" data-pct="47" style="width: 28%;"></div></div>
       </div>
 
       <div class="stat-bar-row">
         <div class="stat-bar-meta">
           <span class="stat-bar-name">Not Started</span>
           <div class="stat-bar-nums">
-            <span class="stat-bar-count n" id="db-notstarted">13</span>
-            <span class="stat-bar-pct" id="db-notstarted-pct">15%</span>
+            <span class="stat-bar-count n" id="db-notstarted">8</span>
+            <span class="stat-bar-pct" id="db-notstarted-pct">9%</span>
           </div>
         </div>
-        <div class="stat-bar-track"><div class="stat-bar-fill n" id="fill-notstarted" data-pct="28" style="width: 15%;"></div></div>
+        <div class="stat-bar-track"><div class="stat-bar-fill n" id="fill-notstarted" data-pct="28" style="width: 9%;"></div></div>
       </div>
 
       <div class="stat-total-row">
@@ -2534,7 +2534,7 @@ if (dashSec) dashboardObs.observe(dashSec);
 <div class="watchlist-section" id="section-blockers">
   <div class="watchlist-header">
     <h2 class="watchlist-title">Watch List</h2>
-    <span class="watchlist-count-badge">8 items requiring attention</span>
+    <span class="watchlist-count-badge">9 items requiring attention</span>
   </div>
   <div class="watchlist-items">
 
@@ -2642,7 +2642,19 @@ if (dashSec) dashboardObs.observe(dashSec);
           <span class="status-badge In-Progress">In Progress</span>
           <span class="watchlist-contractor">CLI / Permits</span>
         </div>
-      </div></div>
+      </div><div class="watchlist-item">
+    <div class="watchlist-index">09</div>
+    <div class="watchlist-body">
+      <div class="watchlist-item-title">Logo Shelves, Logo Entrance, Name Labels - Graphic Star quotation currently approved; they will make a mockup first before final production&nbsp;</div>
+      <div class="watchlist-item-note">Add a note…</div>
+      <div class="watchlist-tags">
+        
+      </div>
+    </div>
+    <div class="watchlist-right"><span class="status-badge In-Progress">In Progress</span>
+      <span class="watchlist-contractor">—</span>
+    </div>
+  </div></div>
 </div>
 
 <!-- AREA-BY-AREA BREAKDOWN -->
@@ -2682,7 +2694,7 @@ if (dashSec) dashboardObs.observe(dashSec);
       <thead><tr><th>Item</th><th>Category</th><th>Contractor</th><th>Priority</th><th>Status</th></tr></thead>
       <tbody>
         <tr><td class="">Tile threshold for glass door</td><td>Glass</td><td>FASCLAD</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
-        <tr class="row-changed"><td class="">Operable wall partition -&nbsp;Meeting with Walls in Motion + GA - June 8 - June 30 Installation; Walls in Motion shopdwg already approved; they are preparing for mobilization + coordinating with PM for their permits -- they will update us when they will start working on site&nbsp;<div class="note">DP pending for delivery</div></td><td>Lacking item</td><td>Walls in Motion</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
+        <tr class="row-changed"><td class="">Operable wall partition -&nbsp;Meeting with Walls in Motion + GA - June 8 - June 30 Installation; Walls in Motion shopdwg already approved; they are preparing for mobilization + coordinating with PM for their permits -- they will update us when they will start working on site<div class="note">DP pending for delivery</div></td><td>Lacking item</td><td>Walls in Motion</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         <tr class="row-changed"><td class="">Wallpaper on operable wall partition- Installation from June 8-19GA to install wallcovering once the operable partion is done<div class="note">GA to install wallcovering after partition is in</div></td><td>Painting/Wall Finishing</td><td>GA</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
         <tr><td class="">CCTV Camera — 2 pcs.</td><td>Auxiliary</td><td>Ng Khai</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Meeting Room table — 4 pcs.</td><td>Furniture</td><td>Top Line</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
@@ -2757,13 +2769,13 @@ if (dashSec) dashboardObs.observe(dashSec);
       <div class="area-name">Caseroom</div>
       <div class="area-chips">
         <span class="chip c">20 Completed</span>
-        <span class="chip p">2 In Progress</span>
-        <span class="chip n">1 Not Started</span>
+        <span class="chip p">3 In Progress</span>
+        <span class="chip n">0 Not Started</span>
       </div>
       <div class="area-mini-bar">
         <div class="area-mini-seg c" style="width: 87%;"></div>
-        <div class="area-mini-seg p" style="width: 9%;"></div>
-        <div class="area-mini-seg n" style="width: 4%;"></div>
+        <div class="area-mini-seg p" style="width: 13%;"></div>
+        <div class="area-mini-seg n" style="width: 0%;"></div>
       </div>
       <div class="area-toggle"><span class="area-toggle-icon">▾</span></div>
     </div>
@@ -2773,7 +2785,7 @@ if (dashSec) dashboardObs.observe(dashSec);
       <tbody>
         <tr class="row-changed"><td class="">Rectify door paints, hinges &amp; mechanisms</td><td>Painting/Wall</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Moulding for name labels at tables -Graphic Star + KAA quotation comparison needs UAP approval<div class="note">Graphic Star / KAA inspection this week</div></td><td>Carpentry</td><td>GA</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
-        <tr class="row-changed"><td class="">Name Labels &amp; Lectern -Graphic Star + KAA quotation comparison needs UAP approval- GRAPHIC STAR approved quotation&nbsp;<div class="note">Ongoing proposal</div></td><td>Lacking item</td><td>Graphic Star</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
+        <tr class="row-changed"><td class="">Name Labels &amp; Lectern -Graphic Star + KAA quotation comparison needs UAP approval- GRAPHIC STAR approved quotation<div class="note">Ongoing proposal</div></td><td>Lacking item</td><td>Graphic Star</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Rectify laminate edging of tables &amp; outlet termination</td><td>Carpentry</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Nosing of carpet tiles</td><td>Carpentry</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Acoustic panels — all walls<div class="note">Pending customs; GA waiting for supplier</div></td><td>Painting/Wall</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
@@ -2792,7 +2804,7 @@ if (dashSec) dashboardObs.observe(dashSec);
         <tr class="row-changed"><td class="">AV Room devices — close ceiling for wiring<div class="note">Waiting for device</div></td><td>Auxiliary</td><td>DATCHE</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Floor guard at windows</td><td>Carpentry</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Door sill at bottom</td><td>Carpentry</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
-        <tr><td class="">Fire Extinguisher installation<div class="note">Needs to be purchased by UA&amp;P first</div></td><td>Fire</td><td>Kintar</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
+        <tr class="row-changed"><td class="">Fire Extinguisher installation&nbsp;<div class="note">Needs to be purchased by UA&amp;P first</div></td><td>Fire</td><td>Kintar</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         
         <tr class="row-changed"><td class="">Switch devices &amp; server for speakers<div class="note">Additional cost</div></td><td>Auxiliary</td><td>Ng Khai</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Wheels for podium</td><td>Furniture</td><td>KAG</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
@@ -2808,13 +2820,13 @@ if (dashSec) dashboardObs.observe(dashSec);
       <div class="area-name">Lobby</div>
       <div class="area-chips">
         <span class="chip c">6 Completed</span>
-        <span class="chip p">6 In Progress</span>
-        <span class="chip n">1 Not Started</span>
+        <span class="chip p">7 In Progress</span>
+        <span class="chip n">0 Not Started</span>
       </div>
       <div class="area-mini-bar">
         <div class="area-mini-seg c" style="width: 46%;"></div>
-        <div class="area-mini-seg p" style="width: 46%;"></div>
-        <div class="area-mini-seg n" style="width: 8%;"></div>
+        <div class="area-mini-seg p" style="width: 54%;"></div>
+        <div class="area-mini-seg n" style="width: 0%;"></div>
       </div>
       <div class="area-toggle"><span class="area-toggle-icon">▾</span></div>
     </div>
@@ -2827,15 +2839,15 @@ if (dashSec) dashboardObs.observe(dashSec);
         <tr class="row-changed"><td class="">Biometrics near entrance<div class="note">Waiting for device</div></td><td>Auxiliary</td><td>Ng Khai</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">FDAS buttons near entrance<div class="note">Testing functionality</div></td><td>Auxiliary</td><td>Ng Khai</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Rectify paint of door frame</td><td>Painting/Wall</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
-        <tr class="row-changed"><td class="">Signage near entrance -Graphic Star + KAA quotation comparison&nbsp;needs UAP approval<div class="note">Graphic Star to inspect this week; provide render</div></td><td>Additional Item</td><td>Graphic Star/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
-        <tr class="row-changed"><td class="">UA&amp;P logo on shelves -Graphic Star + KAA quotation comparison&nbsp;- needs UAP approval<div class="note">Graphic Star to inspect this week; provide render</div></td><td>Additional Item</td><td>Graphic Star/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
-        <tr class="row-changed"><td class="">Static Donor Wall - needs UAP clear direction<div class="note">Graphic Star / KAA to provide quotation</div></td><td>Additional Item</td><td>Graphic Star/UA&amp;P</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
+        <tr class="row-changed"><td class="">Signage near entrance -Graphic Star + KAA quotation comparison&nbsp;needs UAP approvalGRAPHIC STAR quotation approved<div class="note">Graphic Star to inspect this week; provide render</div></td><td>Additional Item</td><td>Graphic Star/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
+        <tr class="row-changed"><td class="">UA&amp;P logo on shelves -Graphic Star + KAA quotation comparison&nbsp;- needs UAP approvalGRAPHIC STAR quotation approved&nbsp;<div class="note">Graphic Star to inspect this week; provide render</div></td><td>Additional Item</td><td>Graphic Star/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
+        <tr class="row-changed"><td class="">Static Donor Wall - CLI ongoing proposal for the static donor wall<div class="note">Graphic Star / KAA to provide quotation</div></td><td>Additional Item</td><td>Graphic Star/UA&amp;P</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         <tr><td class="">CCTV Cameras<div class="note">Needs testing and integration</div></td><td>Auxiliary</td><td>DATCHE</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Furniture — sofa set, lounge chairs, coffee &amp; side tables<div class="note">3-month lead time</div></td><td>Furniture</td><td>CWC</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         
         <tr><td class="">Adjust pendant light height (+0.1m)</td><td>Electrical</td><td>Kintar</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
-        <tr><td class="">Fire Extinguisher installation<div class="note">To be purchased by UA&amp;P; installed by Kintar</div></td><td>Fire</td><td>Kintar/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
-        <tr class="row-changed"><td class="">Additional switch device wiring for lobby speakers -as additional cost<div class="note">Additional cost</div></td><td>Auxiliary</td><td>Ng Khai/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
+        <tr class="row-changed"><td class="">Fire Extinguisher installation<div class="note">To be purchased by UA&amp;P; installed by Kintar</div></td><td>Fire</td><td>Kintar/UA&amp;P</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
+        <tr class="row-changed"><td class="">Additional switch device wiring for lobby speakers -as additional costMeeting on June 29<div class="note">Additional cost</div></td><td>Auxiliary</td><td>Ng Khai/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         
       </tbody>
     </table>
@@ -2876,13 +2888,13 @@ if (dashSec) dashboardObs.observe(dashSec);
     <div class="area-header">
       <div class="area-name">Pantry</div>
       <div class="area-chips">
-        <span class="chip p">2 In Progress</span>
-        <span class="chip n">2 Not Started</span>
+        <span class="chip p">3 In Progress</span>
+        <span class="chip n">1 Not Started</span>
       </div>
       <div class="area-mini-bar">
         <div class="area-mini-seg c" style="width: 20%;"></div>
-        <div class="area-mini-seg p" style="width: 40%;"></div>
-        <div class="area-mini-seg n" style="width: 40%;"></div>
+        <div class="area-mini-seg p" style="width: 60%;"></div>
+        <div class="area-mini-seg n" style="width: 20%;"></div>
       </div>
       <div class="area-toggle"><span class="area-toggle-icon">▾</span></div>
     </div>
@@ -2894,7 +2906,7 @@ if (dashSec) dashboardObs.observe(dashSec);
         <tr class="row-changed"><td class="">Microwave &amp; Refrigerator</td><td>Lacking item</td><td>UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
         <tr class="row-changed"><td class="">Rectify cabinet laminate edges</td><td>Carpentry</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Tables &amp; Chairs<div class="note">3-month lead time</div></td><td>Furniture</td><td>CWC</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
-        <tr><td class="">Fire Extinguisher installation<div class="note">To be purchased by UA&amp;P; installed by Kintar</div></td><td>Fire</td><td>Kintar/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
+        <tr class="row-changed"><td class="">Fire Extinguisher installation<div class="note">To be purchased by UA&amp;P; installed by Kintar</div></td><td>Fire</td><td>Kintar/UA&amp;P</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
       </tbody>
     </table>
     <button class="add-row-btn" onclick="addRow(this)">+ Add Row</button>
@@ -2907,13 +2919,13 @@ if (dashSec) dashboardObs.observe(dashSec);
       <div class="area-name">Multipurpose Hall</div>
       <div class="area-chips">
         <span class="chip c">6 Completed</span>
-        <span class="chip p">2 In Progress</span>
-        <span class="chip n">2 Not Started</span>
+        <span class="chip p">3 In Progress</span>
+        <span class="chip n">1 Not Started</span>
       </div>
       <div class="area-mini-bar">
         <div class="area-mini-seg c" style="width: 60%;"></div>
-        <div class="area-mini-seg p" style="width: 20%;"></div>
-        <div class="area-mini-seg n" style="width: 20%;"></div>
+        <div class="area-mini-seg p" style="width: 30%;"></div>
+        <div class="area-mini-seg n" style="width: 10%;"></div>
       </div>
       <div class="area-toggle"><span class="area-toggle-icon">▾</span></div>
     </div>
@@ -2922,14 +2934,14 @@ if (dashSec) dashboardObs.observe(dashSec);
       <thead><tr><th>Item</th><th>Category</th><th>Contractor</th><th>Priority</th><th>Status</th></tr></thead>
       <tbody>
         <tr class="row-changed"><td class="">Operable wall partition - installation from June 8-19<div class="note">DP pending; supplier to do site inspection this week</div></td><td>Lacking item</td><td>Walls in Motion</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
-        <tr class="row-changed"><td class="">Data floor devices by Ngkai<div class="note">Additional cost</div></td><td>Auxiliary</td><td>Ng Khai</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
+        <tr class="row-changed"><td class="">Data floor devices by Ngkai - once the additional cost approved;they will install these devices<div class="note">Additional cost</div></td><td>Auxiliary</td><td>Ng Khai</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
         <tr class="row-changed"><td class="">Acoustic panels on wall &amp; chair guard<div class="note">Waiting for supplier; pending customs</div></td><td>Painting/Wall</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Rectify acoustic ceiling panels (chipped edges)</td><td>Carpentry</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Back glass door<div class="note">Floor mechanism installed; glass installation this week</div></td><td>Glass</td><td>FASCLAD</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Rectify ceiling paint — storage area</td><td>Painting/Wall</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Light switch — back service area</td><td>Electrical</td><td>Kintar</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Tables<div class="note">3-month lead time</div></td><td>Furniture</td><td>CWC</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
-        <tr><td class="">Fire Extinguisher installation<div class="note">To be purchased by UA&amp;P; installed by Kintar</div></td><td>Fire</td><td>Kintar/UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
+        <tr class="row-changed"><td class="">Fire Extinguisher installation<div class="note">To be purchased by UA&amp;P; installed by Kintar</div></td><td>Fire</td><td>Kintar/UA&amp;P</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         <tr class="row-changed"><td class="">Light switch back service area (Kintar)</td><td>Electrical</td><td>Kintar</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
       </tbody>
     </table>
@@ -2943,12 +2955,12 @@ if (dashSec) dashboardObs.observe(dashSec);
       <div class="area-name">Server Room</div>
       <div class="area-chips">
         <span class="chip c">7 Completed</span>
-        <span class="chip p">0 In Progress</span>
-        <span class="chip n">1 Not Started</span>
+        <span class="chip p">1 In Progress</span>
+        <span class="chip n">0 Not Started</span>
       </div>
       <div class="area-mini-bar">
         <div class="area-mini-seg c" style="width: 88%;"></div>
-        <div class="area-mini-seg p" style="width: 0%;"></div>
+        <div class="area-mini-seg p" style="width: 13%;"></div>
         <div class="area-mini-seg n" style="width: 12%;"></div>
       </div>
       <div class="area-toggle"><span class="area-toggle-icon">▾</span></div>
@@ -2961,7 +2973,7 @@ if (dashSec) dashboardObs.observe(dashSec);
         <tr class="row-changed"><td class="">Wiring for auxiliary devices<div class="note">Waiting for device</div></td><td>Auxiliary</td><td>DATCHE/Ng Khai</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Rectify sprinkler mounting</td><td>Auxiliary</td><td>DATCHE</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr><td class="">Rectify wiring near server room entrance</td><td>Electrical</td><td>Kintar</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
-        <tr><td class="">Fire Extinguisher installation<div class="note">To be purchased by UA&amp;P; installed by Ng Khai</div></td><td>Fire</td><td>Kintar</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
+        <tr class="row-changed"><td class="">Fire Extinguisher installation<div class="note">To be purchased by UA&amp;P; installed by Ng Khai</div></td><td>Fire</td><td>Kintar</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         <tr class="row-changed"><td class="">Internet device - router repeater needs to be installed&nbsp;for the event<div class="note">Waiting for device</div></td><td>Auxiliary</td><td>Ng Khai/UA&amp;P</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Biometrics — back entrance door<div class="note">Additional cost</div></td><td>Additional Item</td><td>Ng Khai/UA&amp;P</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
       <tr class="row-new row-changed">
@@ -3002,10 +3014,10 @@ if (dashSec) dashboardObs.observe(dashSec);
         <tr><td class="">Clean termination — wall covering &amp; all wood cabinets</td><td>Painting/Wall</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Rectify all painting works — all areas</td><td>Painting/Wall</td><td>GA</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
         <tr class="row-changed"><td class="">Furniture — all areas - Mid June (arrival of Furnitures)<div class="note">3-month lead time</div></td><td>Furniture</td><td>CWC</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
-        <tr class="row-changed"><td class="">Occupancy Permit — MEPF As-Built Plans - For Inspection<div class="note">MEPF contractors working on as-built plans</div></td><td>Lacking item</td><td>PERMITS CLI</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
+        <tr class="row-changed"><td class="">Occupancy Permit — MEPF As-Built Plans - For InspectionCLI Permits + Engineering to follow up<div class="note">MEPF contractors working on as-built plans</div></td><td>Lacking item</td><td>PERMITS CLI</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         <tr class="row-changed"><td class="">Business Permit extension - For Inspection<div class="note">Infinum working on extension</div></td><td>Lacking item</td><td>UA&amp;P</td><td><span class="prio-dot High"></span>High</td><td><span class="status-badge In-Progress">In Progress</span></td></tr>
         <tr class="row-changed"><td class="">PLDT Internet connection -<div class="note">Horizontal conduit PO for wiring</div></td><td>Auxiliary</td><td>DATCHE/Ng Khai</td><td><span class="prio-dot Low"></span>Low</td><td><span class="status-badge Completed">Completed</span></td></tr>
-        <tr class="row-changed"><td class="">IKEA Bollsidan adjustable laptop table - needs UAP approval<div class="note">For speaker's laptop use</div></td><td>Auxiliary</td><td>UA&amp;P</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
+        <tr class="row-changed"><td class="">Small Table to cover the device underneath the TV screen; covering the wiresstill ongoing discussion cos it also depends on the wireless device from Ngkai<div class="note">For speaker's laptop use</div></td><td>Auxiliary</td><td>UA&amp;P</td><td><span class="prio-dot Medium"></span>Medium</td><td><span class="status-badge Not-started">Not Started</span></td></tr>
       </tbody>
     </table>
     <button class="add-row-btn" onclick="addRow(this)">+ Add Row</button>
