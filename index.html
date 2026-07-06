@@ -965,6 +965,12 @@
   .contractor-card.at-risk .contractor-card-header {
     background: #2a1a1a;
   }
+  .contractor-card.at-risk .contractor-name {
+    color: #f5f0e8;
+  }
+  .contractor-card.at-risk .contractor-trade {
+    color: #c9b3a6;
+  }
   .risk-badge {
     font-family: 'DM Mono', monospace;
     font-size: 9px;
@@ -2171,7 +2177,7 @@
 
 <!-- COVER -->
 <div class="cover">
-  <div class="cover-bg-number">93</div>
+  <div class="cover-bg-number">84</div>
   <div class="cover-top">
     <div class="cover-tag">Construction Progress Report</div>
     <h1>UA&amp;P Cebu Expansion<br><em>Punch List Status</em></h1>
@@ -2179,7 +2185,7 @@
   </div>
   <div class="cover-bottom">
     <div class="cover-meta">
-      <div class="cover-meta-item"><label>Report Date</label><span>April 27, 2026</span></div>
+      <div class="cover-meta-item"><label>Report Date</label><span>July 6, 2026</span></div>
       <div class="cover-meta-item"><label>Project</label><span>UA&amp;P Cebu Campus</span></div>
       <div class="cover-meta-item"><label>Contractors</label><span>GA · Ng Khai · FASCLAD · CWC · Kintar · Walls in Motion</span></div>
     </div>
@@ -2190,7 +2196,7 @@
 <div class="summary-band" id="section-summary">
   <div class="summary-grid">
     <div class="stat-card total">
-      <div class="num">93</div>
+      <div class="num">84</div>
       <div class="lbl">Total Items</div>
       <div class="pct">Master punch list</div>
       <div class="bar animated"></div>
@@ -2402,7 +2408,7 @@
 
     <!-- Animated ring -->
     <div class="ring-wrap">
-      <canvas id="progressPie" role="img" aria-label="Doughnut chart: 23 completed, 44 in progress, 26 not started." width="520" height="520" style="display: block; box-sizing: border-box; height: 260px; width: 260px;"></canvas>
+      <canvas id="progressPie" role="img" aria-label="Doughnut chart: 53 completed, 24 in progress, 7 not started." width="520" height="520" style="display: block; box-sizing: border-box; height: 260px; width: 260px;"></canvas>
       <div class="ring-center">
         <div class="ring-center-pct visible" id="ringPct">63%</div>
         <div class="ring-center-label">Complete</div>
@@ -2419,7 +2425,7 @@
             <span class="stat-bar-pct" id="db-completed-pct">63%</span>
           </div>
         </div>
-        <div class="stat-bar-track"><div class="stat-bar-fill c" id="fill-completed" data-pct="25" style="width: 63%;"></div></div>
+        <div class="stat-bar-track"><div class="stat-bar-fill c" id="fill-completed" data-pct="63" style="width: 63%;"></div></div>
       </div>
 
       <div class="stat-bar-row">
@@ -2430,7 +2436,7 @@
             <span class="stat-bar-pct" id="db-progress-pct">29%</span>
           </div>
         </div>
-        <div class="stat-bar-track"><div class="stat-bar-fill p" id="fill-progress" data-pct="47" style="width: 29%;"></div></div>
+        <div class="stat-bar-track"><div class="stat-bar-fill p" id="fill-progress" data-pct="29" style="width: 29%;"></div></div>
       </div>
 
       <div class="stat-bar-row">
@@ -2441,7 +2447,7 @@
             <span class="stat-bar-pct" id="db-notstarted-pct">8%</span>
           </div>
         </div>
-        <div class="stat-bar-track"><div class="stat-bar-fill n" id="fill-notstarted" data-pct="28" style="width: 8%;"></div></div>
+        <div class="stat-bar-track"><div class="stat-bar-fill n" id="fill-notstarted" data-pct="8" style="width: 8%;"></div></div>
       </div>
 
       <div class="stat-total-row">
@@ -2475,7 +2481,7 @@ const pieChart = new Chart(document.getElementById('progressPie'), {
   data: {
     labels: ['Completed', 'In Progress', 'Not Started'],
     datasets: [{
-      data: [23, 44, 26],
+      data: [53, 24, 7],
       backgroundColor: ['#4a7c59', '#d4a82a', '#c8472b'],
       borderColor: ['#1a1a2e'],
       borderWidth: 3,
@@ -2503,7 +2509,7 @@ const pieChart = new Chart(document.getElementById('progressPie'), {
         padding: 12,
         callbacks: {
           label: function(ctx) {
-            var pct = Math.round(ctx.parsed / 93 * 100);
+            var pct = Math.round(ctx.parsed / 84 * 100);
             return ' ' + ctx.parsed + ' items — ' + pct + '%';
           }
         }
@@ -2702,7 +2708,7 @@ if (dashSec) dashboardObs.observe(dashSec);
     <button class="filter-btn" data-filter="Not-started">Not Started</button>
     <button class="filter-btn" data-filter="In-Progress">In Progress</button>
     <button class="filter-btn" data-filter="Completed">Completed</button>
-    <span class="filter-count" id="filter-count">93 items</span>
+    <span class="filter-count" id="filter-count">84 items</span>
   </div>
 
 
@@ -3065,7 +3071,7 @@ if (dashSec) dashboardObs.observe(dashSec);
 <div class="contractor-section" id="section-contractors">
   <div class="contractor-section-header">
     <h2 class="contractor-section-title">Contractor Summary</h2>
-    <span class="contractor-section-meta">7 contractors · 93 items</span>
+    <span class="contractor-section-meta">7 contractors · 84 items</span>
   </div>
   <div class="contractor-grid">
 
@@ -3077,24 +3083,24 @@ if (dashSec) dashboardObs.observe(dashSec);
             <div class="contractor-trade">ID Fitout</div>
           </div>
           <div class="contractor-card-badges">
-            <span class="contractor-total">29 items</span>
+            <span class="contractor-total">23 items</span>
           </div>
         </div>
       </div>
       <div class="contractor-card-body">
         <div class="contractor-completion">
-          <span class="contractor-completion-pct">21%</span>
+          <span class="contractor-completion-pct">91%</span>
           <span class="contractor-completion-label">Complete</span>
         </div>
         <div class="contractor-stats-row">
-          <div class="contractor-stat"><span class="contractor-stat-num ck">6</span><span class="contractor-stat-label">Done</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ip">17</span><span class="contractor-stat-label">Active</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ns">6</span><span class="contractor-stat-label">Pending</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ck">21</span><span class="contractor-stat-label">Done</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ip">1</span><span class="contractor-stat-label">Active</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ns">1</span><span class="contractor-stat-label">Pending</span></div>
         </div>
         <div class="contractor-bar">
-          <div class="contractor-bar-seg c" style="width:21%"></div>
-          <div class="contractor-bar-seg p" style="width:59%"></div>
-          <div class="contractor-bar-seg n" style="width:20%"></div>
+          <div class="contractor-bar-seg c" style="width:92%"></div>
+          <div class="contractor-bar-seg p" style="width:4%"></div>
+          <div class="contractor-bar-seg n" style="width:4%"></div>
         </div>
       </div>
     </div>
@@ -3107,24 +3113,24 @@ if (dashSec) dashboardObs.observe(dashSec);
             <div class="contractor-trade">Auxiliary Systems</div>
           </div>
           <div class="contractor-card-badges">
-            <span class="contractor-total">20 items</span>
+            <span class="contractor-total">16 items</span>
           </div>
         </div>
       </div>
       <div class="contractor-card-body">
         <div class="contractor-completion">
-          <span class="contractor-completion-pct">15%</span>
+          <span class="contractor-completion-pct">81%</span>
           <span class="contractor-completion-label">Complete</span>
         </div>
         <div class="contractor-stats-row">
-          <div class="contractor-stat"><span class="contractor-stat-num ck">3</span><span class="contractor-stat-label">Done</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ip">14</span><span class="contractor-stat-label">Active</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ns">3</span><span class="contractor-stat-label">Pending</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ck">13</span><span class="contractor-stat-label">Done</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ip">2</span><span class="contractor-stat-label">Active</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ns">1</span><span class="contractor-stat-label">Pending</span></div>
         </div>
         <div class="contractor-bar">
-          <div class="contractor-bar-seg c" style="width:15%"></div>
-          <div class="contractor-bar-seg p" style="width:70%"></div>
-          <div class="contractor-bar-seg n" style="width:15%"></div>
+          <div class="contractor-bar-seg c" style="width:82%"></div>
+          <div class="contractor-bar-seg p" style="width:12%"></div>
+          <div class="contractor-bar-seg n" style="width:6%"></div>
         </div>
       </div>
     </div>
@@ -3143,17 +3149,17 @@ if (dashSec) dashboardObs.observe(dashSec);
       </div>
       <div class="contractor-card-body">
         <div class="contractor-completion">
-          <span class="contractor-completion-pct">43%</span>
+          <span class="contractor-completion-pct">57%</span>
           <span class="contractor-completion-label">Complete</span>
         </div>
         <div class="contractor-stats-row">
-          <div class="contractor-stat"><span class="contractor-stat-num ck">3</span><span class="contractor-stat-label">Done</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ip">4</span><span class="contractor-stat-label">Active</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ck">4</span><span class="contractor-stat-label">Done</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ip">3</span><span class="contractor-stat-label">Active</span></div>
           <div class="contractor-stat"><span class="contractor-stat-num ns">0</span><span class="contractor-stat-label">Pending</span></div>
         </div>
         <div class="contractor-bar">
-          <div class="contractor-bar-seg c" style="width:43%"></div>
-          <div class="contractor-bar-seg p" style="width:57%"></div>
+          <div class="contractor-bar-seg c" style="width:57%"></div>
+          <div class="contractor-bar-seg p" style="width:43%"></div>
           <div class="contractor-bar-seg n" style="width:0%"></div>
         </div>
       </div>
@@ -3197,25 +3203,25 @@ if (dashSec) dashboardObs.observe(dashSec);
             <div class="contractor-trade">Electrical &amp; Fire</div>
           </div>
           <div class="contractor-card-badges">
-            <span class="contractor-total">9 items</span>
+            <span class="contractor-total">11 items</span>
             <span class="risk-badge">⚠ At Risk</span>
           </div>
         </div>
       </div>
       <div class="contractor-card-body">
         <div class="contractor-completion">
-          <span class="contractor-completion-pct" style="color:var(--high);">11%</span>
+          <span class="contractor-completion-pct" style="color:var(--high);">36%</span>
           <span class="contractor-completion-label">Complete</span>
         </div>
         <div class="contractor-stats-row">
-          <div class="contractor-stat"><span class="contractor-stat-num ck">1</span><span class="contractor-stat-label">Done</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ip">1</span><span class="contractor-stat-label">Active</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ns">7</span><span class="contractor-stat-label">Pending</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ck">4</span><span class="contractor-stat-label">Done</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ip">6</span><span class="contractor-stat-label">Active</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ns">1</span><span class="contractor-stat-label">Pending</span></div>
         </div>
         <div class="contractor-bar">
-          <div class="contractor-bar-seg c" style="width:11%"></div>
-          <div class="contractor-bar-seg p" style="width:11%"></div>
-          <div class="contractor-bar-seg n" style="width:78%"></div>
+          <div class="contractor-bar-seg c" style="width:36%"></div>
+          <div class="contractor-bar-seg p" style="width:55%"></div>
+          <div class="contractor-bar-seg n" style="width:9%"></div>
         </div>
       </div>
     </div>
@@ -3258,25 +3264,25 @@ if (dashSec) dashboardObs.observe(dashSec);
             <div class="contractor-trade">Owner-Procured Items</div>
           </div>
           <div class="contractor-card-badges">
-            <span class="contractor-total">12 items</span>
+            <span class="contractor-total">20 items</span>
             <span class="risk-badge">⚠ At Risk</span>
           </div>
         </div>
       </div>
       <div class="contractor-card-body">
         <div class="contractor-completion">
-          <span class="contractor-completion-pct" style="color:var(--high);">8%</span>
+          <span class="contractor-completion-pct" style="color:var(--high);">35%</span>
           <span class="contractor-completion-label">Complete</span>
         </div>
         <div class="contractor-stats-row">
-          <div class="contractor-stat"><span class="contractor-stat-num ck">1</span><span class="contractor-stat-label">Done</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ip">4</span><span class="contractor-stat-label">Active</span></div>
-          <div class="contractor-stat"><span class="contractor-stat-num ns">7</span><span class="contractor-stat-label">Pending</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ck">7</span><span class="contractor-stat-label">Done</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ip">8</span><span class="contractor-stat-label">Active</span></div>
+          <div class="contractor-stat"><span class="contractor-stat-num ns">5</span><span class="contractor-stat-label">Pending</span></div>
         </div>
         <div class="contractor-bar">
-          <div class="contractor-bar-seg c" style="width:8%"></div>
-          <div class="contractor-bar-seg p" style="width:33%"></div>
-          <div class="contractor-bar-seg n" style="width:59%"></div>
+          <div class="contractor-bar-seg c" style="width:35%"></div>
+          <div class="contractor-bar-seg p" style="width:40%"></div>
+          <div class="contractor-bar-seg n" style="width:25%"></div>
         </div>
       </div>
     </div>
@@ -3301,15 +3307,15 @@ if (dashSec) dashboardObs.observe(dashSec);
       <div class="footer-meta-row">
         <div class="footer-meta-item">
           <span class="footer-meta-label">Report Date</span>
-          <span class="footer-meta-value">April 27, 2026</span>
+          <span class="footer-meta-value">July 6, 2026</span>
         </div>
         <div class="footer-meta-item">
           <span class="footer-meta-label">Total Items</span>
-          <span class="footer-meta-value">93</span>
+          <span class="footer-meta-value">84</span>
         </div>
         <div class="footer-meta-item">
           <span class="footer-meta-label">Completion</span>
-          <span class="footer-meta-value">25%</span>
+          <span class="footer-meta-value">63%</span>
         </div>
       </div>
     </div>
